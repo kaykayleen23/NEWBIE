@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  background: #E0A2A2;
+  color: var(--Very-dark-desaturated-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.circle1{
+  position: absolute;
+  background: url("bg-pattern-top.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  top: -528px;
+  left: -284px;
+}
+
+.circle2{
+  position: absolute;;
+  background: url("bg-pattern-top.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 978px;
+  width: 978px;
+  bottom: -528px;
+  right: -284px;
+}
+
+.info{
+  background: white;
+  height: 376px;
+  width: 350px;
+  border-radius: 10px;
+  z-index: 99;
+  position: relative;
+}
+
+.info .bg-img{
+  height: 142px;
+  background: url("cute.jpg");
+  border-radius: 10px 10px 0 0;
+}
+
+.profile .picture{
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  border-radius: 50%;
+  padding: 5px;
+  background: white;
+  top: 94px;
+}
+
+ .profile .picture img{
+   height: 75px;
+   width: 75px;
+   border-radius: 50%;
+ }
+
+.profile-info{
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profile{
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #E0A2A2;
+  padding-bottom: 20px;
+}
+
+.profile .name{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #C38888;
+}
+
+.profile .name span{
+  font-weight: 700;
+  color: #915858;
+}
+
+.profile .location{
+  color: #C38888;
+}
+
+.stats{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 23px;
+  text-align: center;
+}
+
+.stats .number{
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: #915858
+}
+
+.stats p{
+  color: #C38888;
+}
